@@ -1,223 +1,181 @@
-# SkinSync — Detailed GitHub README
 
-You want the README to follow the style of your G3 Architects example: attractive, organized, easy to read, and suitable for a professional GitHub repository—but with **more detailed documentation** for your third-year defense project.
+<div align="center">
 
-The README below includes the project's purpose, all major features, technical architecture, both diagrams, technologies, application workflow, installation instructions, team information, and academic context.
+# SkinSync
+### Sync Your Routine. Transform Your Skin.
 
-It also distinguishes between planned features and features that are actually implemented. That matters for your defense: documentation should describe what your team has built, not claim that unfinished functionality already works.
+**AI-Assisted Personalized Skincare Mobile Application**
 
-Copy this into your repository's `README.md`. Replace the placeholder links and add your existing diagrams and screenshots at the specified paths.
+A third-year Computer Science and Engineering project developed to help users understand their skin, build personalized skincare routines, discover skincare products, and monitor their skincare journey.
 
-```markdown
-# SkinSync — Sync Your Routine. Transform Your Skin.
+![Flutter](https://img.shields.io/badge/Flutter-Mobile_App-02569B?logo=flutter)
+![Dart](https://img.shields.io/badge/Dart-Programming_Language-0175C2?logo=dart)
+![Node.js](https://img.shields.io/badge/Node.js-Backend-339933?logo=node.js)
+![Express.js](https://img.shields.io/badge/Express.js-REST_API-000000?logo=express)
+![MongoDB](https://img.shields.io/badge/MongoDB-Database-47A248?logo=mongodb)
+![Project](https://img.shields.io/badge/Project-3rd_Year_Defense-blue)
 
-Welcome to **SkinSync**, an AI-assisted skincare mobile application developed as a third-year Computer Science and Engineering project.
-
-SkinSync is designed to help users understand their skin, create personalized skincare routines, discover skincare products, explore ingredient information, and monitor their skincare journey.
-
-The application combines mobile app development, backend services, database management, cloud image storage, and AI-assisted image analysis to provide a centralized skincare management experience.
-
----
-
-## 🚀 Project Overview
-
-Skincare is an important part of personal care, but many people struggle to identify their skin concerns, select suitable products, and maintain consistent skincare habits.
-
-SkinSync aims to make skincare management easier by allowing users to:
-
-- Complete a personalized skin assessment.
-- Capture or upload facial photographs for AI-assisted analysis.
-- Receive skincare-related insights and recommendations.
-- Create personalized morning and evening skincare routines.
-- Discover skincare products and ingredients.
-- Set reminders for daily skincare activities.
-- Save skincare products and routines.
-- Upload progress photographs.
-- Maintain a skincare journal.
-- Monitor their skincare journey over time.
-
-The project is developed using Flutter for the mobile application, with a backend system responsible for authentication, data management, image processing, and communication with the AI analysis service.
+</div>
 
 ---
 
-## 🎯 Project Objectives
+## 📌 Project Overview
 
-The main objectives of SkinSync are:
+**SkinSync** is a personalized skincare mobile application developed as a third-year Computer Science and Engineering project.
 
-1. Develop a cross-platform skincare mobile application using Flutter.
-2. Provide a convenient way for users to assess and manage their skincare needs.
-3. Implement AI-assisted facial image analysis for supported visible skin concerns.
-4. Generate personalized skincare routines based on user information.
-5. Provide educational information about skincare products and ingredients.
-6. Encourage consistent skincare habits through reminders.
-7. Enable users to document and track skincare progress.
-8. Implement secure authentication and user-data management.
-9. Apply software engineering, system design, database, and mobile development concepts in a real-world project.
+The application aims to simplify skincare management by combining skin assessment, AI-assisted facial image analysis, personalized skincare routines, product recommendations, ingredient education, reminders, and progress tracking into one platform.
+
+Users can capture or upload facial photographs, complete a skincare questionnaire, receive skincare-related insights, and organize their daily skincare activities.
+
+SkinSync is designed to encourage consistent skincare habits and help users monitor their skincare journey over time.
+
+### 🎯 Project Objectives
+
+- Develop a cross-platform skincare application using Flutter.
+- Help users assess and manage their skincare needs.
+- Implement AI-assisted analysis of supported visible skin characteristics.
+- Generate personalized morning and evening skincare routines.
+- Provide skincare product and ingredient information.
+- Encourage consistent skincare habits through reminders.
+- Enable progress-photo tracking and skincare journaling.
+- Apply software engineering, database management, and backend development principles.
+
+---
+
+## 🚀 Live Demo
+
+👉 **[Live Application](YOUR_LIVE_DEMO_LINK)**
+
+Replace the placeholder with your deployed application link.
+
+If the application is not deployed yet, remove this section until a demo is available.
 
 ---
 
 ## ✨ Key Features
 
-### 1. User Registration and Login
+### 1. User Registration and Authentication
 
-SkinSync allows users to create an account and securely access their personal skincare information.
+Users can create an account, log in, and access their personal skincare information.
 
-Users can register using their required account details, log in, manage their profile, and access their saved skincare records.
-
-Authentication ensures that personal information and skincare history are accessible only to authorized users.
+The authentication system protects user accounts and restricts access to private application features.
 
 ### 2. Facial Photo Capture and Upload
 
-Users can capture a facial photograph using their device camera or select an existing photograph from their gallery.
+Users can capture a facial photograph using their device camera or upload an existing photograph from their gallery.
 
-The selected image is submitted for analysis after basic validation.
-
-The application should provide clear instructions regarding photo quality, lighting, and image suitability.
+The application validates the selected image before sending it for analysis.
 
 ### 3. AI-Assisted Skin Analysis
 
-SkinSync integrates an AI-assisted image-analysis service to process facial photographs and identify supported visible skin characteristics.
+SkinSync integrates an AI-assisted image-analysis service to identify supported visible skin characteristics.
 
-Depending on the capabilities of the selected analysis service, the system may provide insights into concerns such as:
+Depending on the capabilities of the selected analysis service, the application may provide skincare-related insights concerning visible blemishes, redness, dark spots, dryness-related appearance, and other supported characteristics.
 
-- Acne-like blemishes.
-- Visible redness.
-- Dark spots.
-- Dryness-related appearance.
-- Oiliness-related appearance.
-- Other supported visible characteristics.
-
-The results are displayed to users as skincare-related insights rather than medical diagnoses.
+The analysis is intended for general skincare information, not medical diagnosis.
 
 ### 4. Skin Assessment Questionnaire
 
-Users complete a questionnaire containing information about their skin type, concerns, sensitivity, skincare habits, and preferences.
+Users complete a questionnaire covering skin type, skincare concerns, sensitivity, habits, and preferences.
 
-The questionnaire helps the application understand the user's skincare needs and provides additional context for personalized recommendations.
+The questionnaire provides additional information that can support personalized skincare recommendations.
 
 ### 5. Personalized Skin Profile
 
-The application generates a skin profile using available questionnaire responses and supported AI-analysis results.
+The application combines available questionnaire responses and supported analysis results to generate a skin profile.
 
-The profile may include:
-
-- Selected or estimated skin type.
-- Reported skin concerns.
-- Skincare preferences.
-- Relevant sensitivity information.
-- Previous assessment records.
-
-Users can review and update their profile information when necessary.
+The profile may include skin type, reported concerns, skincare preferences, and previous assessment records.
 
 ### 6. Personalized Morning Routine
 
 SkinSync provides an organized morning skincare routine based on the user's profile and preferences.
 
-The routine may include skincare steps such as cleansing, moisturizing, and sun protection, depending on the user's needs and the application's recommendation rules.
-
-Users can view the sequence of steps and mark activities as completed.
+Users can review skincare steps, access relevant product information, and mark activities as completed.
 
 ### 7. Personalized Evening Routine
 
-The application also provides an evening skincare routine to help users maintain their skincare habits.
+The application provides an evening skincare routine to help users maintain consistent skincare habits.
 
-Users can review recommended steps, access relevant product information, and track their daily routine completion.
+Users can review recommended steps and track their daily routine completion.
 
 ### 8. Skincare Product Recommendations
 
-SkinSync helps users discover skincare products relevant to their skincare profile.
+Users can discover skincare products relevant to their skincare profile.
 
-Users can browse available products and view information such as:
-
-- Product name.
-- Brand.
-- Product category.
-- Key ingredients.
-- General product purpose.
-- Usage information.
-
-Recommendations are intended to support product discovery and should not be interpreted as guaranteed treatment outcomes.
+Product information may include product name, brand, category, ingredients, general purpose, and usage instructions.
 
 ### 9. Ingredient Search and Education
 
 Users can search for skincare ingredients and explore their general functions, benefits, and common uses.
 
-This feature helps users become more informed about the ingredients included in skincare products.
+This feature helps users understand the ingredients found in skincare products.
 
 ### 10. Favorites
 
-Users can save products and other supported skincare resources to a favorites list.
-
-Saved items can be accessed later without repeating the search.
+Users can save products and other supported skincare resources to a favorites list for convenient access.
 
 ### 11. Skincare Reminders
 
-The application allows users to set reminders for skincare activities.
+Users can configure reminders for morning and evening skincare activities.
 
-Users can receive notifications for their morning and evening routines and manage their reminder preferences.
+Reminder preferences can be managed according to the application's supported notification functionality.
 
 ### 12. Progress Photo Tracking
 
 Users can upload photographs to document their skincare journey.
 
-The application organizes progress photographs by date and allows users to review previous images.
-
-Where supported, users can compare photographs taken at different times to observe visible changes.
+Photographs can be organized by date and reviewed over time. Where supported, users can compare earlier and more recent photographs.
 
 ### 13. Skincare Journal
 
-Users can record personal observations about their skin, products, and daily skincare activities.
+Users can record personal observations about their skin, products, routines, and skincare experiences.
 
-Journal entries help users maintain a history of their skincare experiences.
+Journal entries help users maintain a history of their skincare activities.
 
 ### 14. Skincare History
 
 SkinSync stores relevant assessment results, routine records, journal entries, and progress photographs.
 
-Users can review their previous skincare activities and assessments to better understand their skincare journey.
+Users can review their previous skincare activities and assessments.
 
-### 15. Educational Articles
+### 15. Educational Resources
 
-The application provides skincare-related educational content.
-
-Users can explore general skincare information, learn about ingredients, and improve their understanding of skincare practices.
+Users can access skincare-related educational content to learn about skincare practices, products, and ingredients.
 
 ### 16. Administrative Management
 
-Authorized administrators may manage application content, including skincare products, ingredient information, educational resources, and predefined skincare routines.
+Authorized administrators may manage skincare products, ingredient information, educational content, and predefined routines.
 
-Administrative functionality depends on the final system implementation.
+Administrative features depend on the final implementation.
 
 ---
 
 ## 🛠️ Technologies Used
 
-SkinSync uses the following technologies and development tools.
+### Frontend
 
-### Mobile Application
+- Flutter
+- Dart
+- Android Studio
+- Visual Studio Code
 
-- **Flutter** — Cross-platform mobile application framework.
-- **Dart** — Programming language used to develop the Flutter application.
-- **Android Studio** — Android development environment.
-- **Visual Studio Code** — Code editing and development.
+### Backend
 
-### Backend Development
+- Node.js
+- Express.js
+- MongoDB
+- JWT Authentication
+- Cloudinary
+- AI Image Analysis Service
 
-- **Node.js** — JavaScript runtime used for backend development.
-- **Express.js** — Framework for developing RESTful APIs.
-- **MongoDB** — Database for storing application information.
-- **JWT Authentication** — Token-based authentication for protected resources.
-- **Cloudinary** — Cloud image storage and management.
-- **AI Image Analysis Service** — Processing facial photographs and returning supported analysis results.
+### Development Tools
 
-### Development and Testing Tools
+- Git
+- GitHub
+- Postman
+- Figma
 
-- **Git** — Version control.
-- **GitHub** — Repository hosting and team collaboration.
-- **Postman** — API testing.
-- **Figma** — UI/UX design and prototyping.
-
-> **Important:** This technology list follows the architecture diagram previously prepared for SkinSync. Confirm that MongoDB, Express.js, and Cloudinary match the technologies used in your final implementation before publishing.
+> **Note:** This technology stack follows the previously prepared SkinSync architecture diagram. Confirm that it matches the technologies used in your final implementation.
 
 ---
 
@@ -225,56 +183,91 @@ SkinSync uses the following technologies and development tools.
 
 SkinSync follows a client-server architecture.
 
-The Flutter mobile application acts as the client, while the backend handles application logic, authentication, database operations, and communication with supporting services.
+The Flutter mobile application communicates with the Node.js and Express.js backend through RESTful APIs over HTTPS.
+
+The backend manages authentication, application logic, database operations, and communication with the AI analysis service and image-storage platform.
 
 ### Architecture Components
 
 | Component | Technology | Responsibility |
 |---|---|---|
-| Mobile Frontend | Flutter | User interface and mobile application functionality |
-| Backend Server | Node.js and Express.js | API endpoints and business logic |
+| Mobile Application | Flutter | User interface and mobile functionality |
+| Backend Server | Node.js, Express.js | API endpoints and application logic |
 | Database | MongoDB | Persistent application data |
-| Authentication | JWT | Authenticated access to protected features |
+| Authentication | JWT | Authenticated access to protected resources |
 | Image Storage | Cloudinary | Storage and management of photographs |
-| AI Analysis | AI image-analysis service | Supported facial image analysis |
+| AI Analysis | AI Analysis Service | Processing supported facial image characteristics |
 
-### Architecture Diagram
-
-The following diagram illustrates the major components of SkinSync and how they communicate.
+### Complete Architecture Diagram
 
 ![SkinSync Complete Architecture Diagram](docs/images/architecture-diagram.png)
 
-**Architecture diagram file:** `docs/images/architecture-diagram.png`
+**Diagram file:** `docs/images/architecture-diagram.png`
 
-The diagram includes:
+The architecture diagram illustrates:
 
 - Overall system architecture.
 - Flutter mobile application.
 - Backend server and REST API.
-- Database and cloud image storage.
+- Database and image-storage services.
 - AI image-analysis workflow.
-- Registration and login flow.
+- Registration and login process.
 - Personalized recommendation generation.
 - Data storage structure.
 - Component communication.
+
+### Simplified Architecture
+
+```text
+                   ┌──────────────────────┐
+                   │         User         │
+                   └──────────┬───────────┘
+                              │
+                              ▼
+                   ┌──────────────────────┐
+                   │    Flutter Mobile    │
+                   │      Application     │
+                   └──────────┬───────────┘
+                              │
+                         HTTPS / REST
+                              │
+                              ▼
+                   ┌──────────────────────┐
+                   │   Node.js + Express  │
+                   │      Backend API     │
+                   └──────┬─────┬─────────┘
+                          │     │
+                 ┌────────┘     └─────────┐
+                 ▼                        ▼
+        ┌─────────────────┐      ┌─────────────────┐
+        │     MongoDB     │      │  AI Analysis    │
+        │    Database     │      │    Service      │
+        └─────────────────┘      └────────┬────────┘
+                                          │
+                                          ▼
+                                 ┌─────────────────┐
+                                 │    Cloudinary   │
+                                 │  Image Storage  │
+                                 └─────────────────┘
+```
 
 ---
 
 ## 🎨 User Interface Design
 
-SkinSync is designed with a simple and user-friendly interface to make skincare management convenient.
+SkinSync is designed with a simple, intuitive, and visually consistent interface.
 
-The interface organizes skincare information into clear sections and provides straightforward navigation between assessment, analysis, routines, products, and progress tracking.
+The application organizes skincare information into clear sections and provides straightforward navigation between assessment, analysis, routines, products, and progress tracking.
 
-### UI Design Diagram
+### UI and User Interaction Diagram
 
 ![SkinSync User Interface and Interaction Design](docs/images/ui-user-interaction-diagram.png)
 
-**UI design diagram file:** `docs/images/ui-user-interaction-diagram.png`
+**Diagram file:** `docs/images/ui-user-interaction-diagram.png`
 
-### Main Screens
+The UI design diagram illustrates the application's screens, navigation, and major user interactions.
 
-The application's planned interface includes:
+### Main Application Screens
 
 1. Welcome Screen
 2. Registration Screen
@@ -296,69 +289,62 @@ The application's planned interface includes:
 18. Skincare History
 19. User Profile and Settings
 
-The final screens should reflect the UI designs and functionality implemented in the application.
+The final screen list should match the UI designs and features implemented in the application.
 
 ---
 
 ## 🔄 Application Workflow
 
-The main SkinSync workflow begins when a user creates an account and completes a skin assessment.
+The primary SkinSync workflow begins with user registration and a skincare assessment.
 
-The user can then upload a facial photograph for supported AI-assisted analysis.
+The user can then capture or upload a facial photograph for supported AI-assisted analysis.
 
-The application combines the available analysis results with questionnaire information to generate a skin profile and personalized skincare recommendations.
-
-### Main Workflow
+The application combines available analysis results with questionnaire information to generate a skin profile and personalized recommendations.
 
 ```text
-                 User
-                  |
-                  v
-        Registration / Login
-                  |
-                  v
-        Complete Skin Assessment
-                  |
-                  v
-        Capture or Upload Photo
-                  |
-                  v
-           Image Validation
-                  |
-                  v
-        AI-Assisted Skin Analysis
-                  |
-                  v
-          Generate Skin Profile
-                  |
-                  v
+          User Registration / Login
+                    |
+                    ▼
+          Complete Skin Assessment
+                    |
+                    ▼
+          Capture or Upload Photo
+                    |
+                    ▼
+              Image Validation
+                    |
+                    ▼
+          AI-Assisted Skin Analysis
+                    |
+                    ▼
+            Generate Skin Profile
+                    |
+                    ▼
        Personalized Recommendations
-                  |
-          +-------+-------+
-          |               |
-          v               v
-    Morning Routine   Evening Routine
-          |               |
-          +-------+-------+
-                  |
-                  v
-        Follow Routine and Reminders
-                  |
-                  v
-          Record Skincare Activities
-                  |
-                  v
-           Upload Progress Photos
-                  |
-                  v
-         Monitor Skincare Journey
+                    |
+           ┌────────┴────────┐
+           ▼                 ▼
+     Morning Routine   Evening Routine
+           │                 │
+           └────────┬────────┘
+                    ▼
+       Follow Routine and Reminders
+                    |
+                    ▼
+        Record Skincare Activities
+                    |
+                    ▼
+          Upload Progress Photos
+                    |
+                    ▼
+        Monitor Skincare Journey
 ```
 
 ---
 
 ## 📂 Project Structure
 
-The repository may be organized into separate frontend, backend, and documentation directories.
+The following is a suggested repository structure. Update it to match your actual implementation.
 
 ```text
 SkinSync/
@@ -402,27 +388,23 @@ SkinSync/
 └── .gitignore
 ```
 
-This is a suggested structure. Update it to match your actual repository.
-
 ---
 
 ## ⚙️ Installation and Setup
-
-Follow these steps to configure the development environment and run SkinSync.
 
 ### Prerequisites
 
 Install the following software:
 
-- Flutter SDK.
-- Dart SDK.
-- Android Studio or Visual Studio Code.
-- Node.js and npm.
-- MongoDB or a MongoDB deployment.
-- A Cloudinary account.
-- Credentials for the selected AI-analysis service, if required.
+- Flutter SDK
+- Dart SDK
+- Android Studio or Visual Studio Code
+- Node.js and npm
+- MongoDB or an accessible MongoDB deployment
+- Cloudinary account
+- Credentials for the selected AI analysis service, if required
 
-### Step 1: Clone the Repository
+### 1. Clone the Repository
 
 ```bash
 git clone https://github.com/YOUR_USERNAME/SkinSync.git
@@ -430,9 +412,9 @@ git clone https://github.com/YOUR_USERNAME/SkinSync.git
 cd SkinSync
 ```
 
-Replace `YOUR_USERNAME` with your GitHub username or organization.
+Replace `YOUR_USERNAME` with the GitHub username or organization hosting the repository.
 
-### Step 2: Configure the Backend
+### 2. Configure the Backend
 
 Navigate to the backend directory:
 
@@ -446,15 +428,13 @@ Install dependencies:
 npm install
 ```
 
-Create a local environment file:
+Create a local environment file from the example:
 
 ```bash
 cp .env.example .env
 ```
 
-Configure the required environment variables in `.env`.
-
-Example:
+Configure the required environment variables:
 
 ```env
 PORT=5000
@@ -470,7 +450,9 @@ CLOUDINARY_API_SECRET=YOUR_CLOUDINARY_API_SECRET
 AI_API_KEY=YOUR_AI_SERVICE_API_KEY
 ```
 
-The actual variables depend on your backend implementation.
+The exact variables depend on your backend and AI service implementation.
+
+**Never commit your actual `.env` file, passwords, API keys, or private credentials to GitHub.**
 
 Start the backend:
 
@@ -480,9 +462,9 @@ npm run dev
 
 If the development script is not configured, add the appropriate command to `package.json`.
 
-### Step 3: Configure the Flutter Application
+### 3. Configure the Flutter Application
 
-Open another terminal and navigate to the Flutter project:
+Open a new terminal and navigate to the Flutter project:
 
 ```bash
 cd frontend/skinsync_flutter
@@ -494,7 +476,7 @@ Install Flutter dependencies:
 flutter pub get
 ```
 
-Configure the backend API URL in the application's configuration.
+Configure the backend API URL in the appropriate application configuration file.
 
 For example:
 
@@ -504,7 +486,7 @@ const String apiBaseUrl = "YOUR_BACKEND_API_URL";
 
 Use the correct development URL for your emulator or physical device.
 
-### Step 4: Run the Application
+### 4. Run the Application
 
 Check available devices:
 
@@ -512,7 +494,7 @@ Check available devices:
 flutter devices
 ```
 
-Run the Flutter application:
+Run SkinSync:
 
 ```bash
 flutter run
@@ -524,15 +506,13 @@ The application should launch on the selected Android device or emulator once th
 
 ## 🧪 Testing
 
-Testing is an important part of SkinSync development.
-
-The project should be tested to verify that its major functions operate correctly.
+Testing should verify that the application's major features operate correctly.
 
 ### Functional Testing
 
-Test the following features:
+Test:
 
-- Registration and login.
+- User registration and login.
 - Authentication and protected routes.
 - Skin assessment submission.
 - Facial photo upload.
@@ -548,19 +528,17 @@ Test the following features:
 
 ### API Testing
 
-Use Postman or an equivalent tool to test backend endpoints.
+Use Postman or an equivalent tool to verify:
 
-Verify that:
-
-- Requests return the expected responses.
-- Invalid input is handled correctly.
+- API requests return expected responses.
+- Invalid inputs are handled correctly.
 - Unauthorized requests are rejected.
 - Database operations behave as expected.
 - Errors are handled without exposing sensitive information.
 
 ### UI Testing
 
-Verify that:
+Verify:
 
 - Screens display correctly.
 - Navigation works as intended.
@@ -572,38 +550,38 @@ Verify that:
 
 ## 🔐 Privacy and Security
 
-SkinSync may process personal information and facial photographs.
+SkinSync may process personal information, skincare records, and facial photographs.
 
-The application should follow appropriate security and privacy practices, including:
+The application should apply appropriate security and privacy practices:
 
 - Secure password handling.
 - HTTPS communication.
 - JWT validation.
-- Authorization checks for user-specific data.
-- Secure storage of API credentials.
+- Authorization checks for user-specific information.
+- Secure management of API credentials.
 - Restricted access to uploaded photographs.
 - Appropriate consent for image processing.
 - Careful handling of skincare history and journal entries.
 
-Sensitive credentials must never be committed to the public repository.
+Facial photographs and personal skincare records should not be publicly accessible without authorization.
 
 ---
 
 ## 🗺️ Future Improvements
 
-Potential improvements include:
+Potential future improvements include:
 
 - More advanced AI-assisted skin-analysis capabilities.
-- Improved personalization of skincare routines.
+- Improved skincare personalization.
 - Expanded product and ingredient databases.
 - Additional progress-tracking tools.
-- More flexible reminders and notifications.
-- Better accessibility.
+- Enhanced reminders and notifications.
+- Improved accessibility.
 - Additional mobile-platform support.
-- Improved educational content.
-- Enhanced user privacy controls.
+- More comprehensive educational resources.
+- Enhanced privacy controls.
 
-These improvements depend on the final project scope and available resources.
+Future improvements will depend on the final project scope, available resources, and testing.
 
 ---
 
@@ -613,8 +591,8 @@ SkinSync is developed by the following students.
 
 | Role | Name |
 |---|---|
-| Teammate 1 | Md shamsul Alom Rahat |
-| Teammate 2 | Fabliha ahmed fami |
+| Teammate 1 | Md Shamsul Alom Rahat |
+| Teammate 2 | Fabliha Ahmed Fami |
 | Teammate 3 | Shahrin Chowdhury |
 
 ---
@@ -672,7 +650,7 @@ For questions, suggestions, or collaboration regarding SkinSync, contact the pro
 
 ## 📝 License
 
-The project license has not yet been specified.
+The project's license has not yet been specified.
 
 If the repository is intended to be open source, add an appropriate license file and update this section.
 
@@ -684,7 +662,7 @@ SkinSync is a third-year academic project combining mobile development, backend 
 
 The architecture and UI diagrams should be placed in `docs/images/` and referenced from this README.
 
-Before presenting the repository, ensure that the documented technologies, features, installation steps, and screenshots match the actual implementation.
+Before publishing, ensure that the documented technologies, features, installation steps, and screenshots match the actual implementation.
 
 ---
 
@@ -697,4 +675,3 @@ Developed as a third-year CSE project.
 
 </div>
 ```
-
