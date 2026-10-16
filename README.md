@@ -698,15 +698,3 @@ Developed as a third-year CSE project.
 </div>
 ```
 
-### Final checklist for your GitHub repository
-
-- [ ] Create `README.md` in the root directory.
-- [ ] Add your architecture diagram to `docs/images/architecture-diagram.png`.
-- [ ] Add your UI/user interaction diagram to `docs/images/ui-user-interaction-diagram.png`.
-- [ ] Add actual app screenshots if you have them.
-- [ ] Replace `YOUR_USERNAME` with your GitHub username.
-- [ ] Confirm the technology stack matches your final implementation.
-- [ ] Update the setup instructions to match your real folder structure.
-- [ ] Make sure you haven't committed API keys, passwords, or `.env` files.
-
-**One important correction before you publish:** Your earlier project proposal mentioned Firestore and PostgreSQL, while your architecture diagram shows MongoDB and Express.js. Pick the stack your team is actually using and make the README consistent with it. A polished README is good; a README that contradicts your own architecture diagram is an avoidable defense question.
