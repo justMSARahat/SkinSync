@@ -630,18 +630,6 @@ Users with persistent, severe, or concerning skin conditions should consult a qu
 
 ---
 
-## 📬 Contact
-
-For questions, suggestions, or collaboration regarding SkinSync, contact the project team through the repository's GitHub Issues section.
-
-**GitHub Repository:**  
-[Add your repository link here]
-
-**Project Contact:**  
-[Add your preferred contact information here]
-
----
-
 ## 📝 License
 
 The project's license has not yet been specified.
@@ -668,4 +656,4 @@ Before publishing, ensure that the documented technologies, features, installati
 Developed as a third-year CSE project.
 
 </div>
-```
+
