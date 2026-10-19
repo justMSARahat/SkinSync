@@ -44,11 +44,7 @@ SkinSync is designed to encourage consistent skincare habits and help users moni
 
 ## 🚀 Live Demo
 
-👉 **[Live Application](YOUR_LIVE_DEMO_LINK)**
-
-Replace the placeholder with your deployed application link.
-
-If the application is not deployed yet, remove this section until a demo is available.
+<img width="2220" height="1180" alt="SkinSync – User Interaction Design" src="https://github.com/user-attachments/assets/aba63f50-bd64-4091-9da1-92bc84860d99" />
 
 ---
 
@@ -200,9 +196,7 @@ The backend manages authentication, application logic, database operations, and 
 
 ### Complete Architecture Diagram
 
-![SkinSync Complete Architecture Diagram](docs/images/architecture-diagram.png)
-
-**Diagram file:** `docs/images/architecture-diagram.png`
+<img width="1800" height="2280" alt="Frame" src="https://github.com/user-attachments/assets/0a23b763-1b33-4f36-8feb-3f96804e7f4f" />
 
 The architecture diagram illustrates:
 
